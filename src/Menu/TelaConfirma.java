@@ -149,6 +149,11 @@ public class TelaConfirma extends javax.swing.JFrame {
         );
 
         btnLogout.setText("Logout");
+        btnLogout.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLogoutActionPerformed(evt);
+            }
+        });
 
         jLabel1.setText("jLabel1");
 
@@ -226,6 +231,11 @@ public class TelaConfirma extends javax.swing.JFrame {
         setSize(new java.awt.Dimension(731, 470));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnLogoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogoutActionPerformed
+       new Index().setVisible(true);
+       this.dispose();
+    }//GEN-LAST:event_btnLogoutActionPerformed
 
     /**
      * @param args the command line arguments

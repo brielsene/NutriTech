@@ -147,11 +147,16 @@ public class Index extends javax.swing.JFrame {
                 //enviar mensagem dizendo incorreto
                 JOptionPane.showMessageDialog(null, "Usuario ou senha inválida\n"
                         + "caso não tenha acesso, clique em Cadastrar");
+                txtUsuario.setText("");
+                txtSenha.setText("");
+                txtUsuario.requestFocus();
                 
             }
             
         } catch (SQLException erro) {
+           
             JOptionPane.showMessageDialog(null, "FRMLOGINVIEW"+erro);
+            
         }
     }//GEN-LAST:event_btnLoginActionPerformed
 
