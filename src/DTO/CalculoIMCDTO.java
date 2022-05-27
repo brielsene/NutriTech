@@ -9,7 +9,7 @@ package DTO;
  * @author Sene
  */
 public class CalculoIMCDTO {
-    float resultado;
+    private float resultado;
     private float altura, peso;
     
         public float getAltura(){
@@ -31,6 +31,13 @@ public class CalculoIMCDTO {
             return resultado = peso/(altura*2);
             
             
+        }
+        public float getResultado(){
+            return resultado;
+        }
+        
+        public void setResultado(float resultado){
+            this.resultado = resultado;
         }
     
 }

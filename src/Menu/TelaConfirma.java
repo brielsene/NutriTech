@@ -49,6 +49,11 @@ public class TelaConfirma extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(255, 102, 102));
 
         btnIMC.setText("Calcular meu IMC");
+        btnIMC.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnIMCActionPerformed(evt);
+            }
+        });
 
         jPanel2.setBackground(new java.awt.Color(255, 218, 218));
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 2));
@@ -236,6 +241,10 @@ public class TelaConfirma extends javax.swing.JFrame {
        new Index().setVisible(true);
        this.dispose();
     }//GEN-LAST:event_btnLogoutActionPerformed
+
+    private void btnIMCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIMCActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnIMCActionPerformed
 
     /**
      * @param args the command line arguments
